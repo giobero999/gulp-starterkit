@@ -1,0 +1,44 @@
+header {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  left: 280px;
+  z-index: 1;
+  text-align: right;
+}
+#header {
+  @include flexBox($jc: flex-end, $ai: center);
+  height: 70px;
+  background: white;
+  padding: 0 $gap-base;
+  box-shadow: 0 1px 6px rgba(#000000, 0.12);
+  .search {
+    @include flexBox($ai: center);
+    .form-control {
+      min-width: 300px;
+      margin-right: $gap-base;
+      border-radius: 40px;
+    }
+  }
+  .header-settings {
+    .btn {
+      margin-left: $gap-base;
+      color: $color-light;
+    }
+  }
+  &.landing-header {
+    .landing-nav {
+      @include flexBox($ai: center);
+      list-style: none;
+      align-items: center;
+      padding-left: 0;
+      margin-bottom: 0;
+      &-item {
+        margin-left: $gap-base;
+        &.landing-nav-btns {
+          margin-left: $gap-lg * 2;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+$checkbox-bg: #e8e8e8;
+$checkbox-hover: rgba(#e8e8e8, 0.6);
+
+.custom-checkbox-label {
+  @include flexBox($ai: flex-start);
+  padding: 0;
+  cursor: pointer;
+  &:hover {
+    .custom-checkbox {
+      background: $checkbox-hover;
+      transition: all 0.2s ease-in-out;
+    }
+  }
+  .custom-checkbox {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    min-width: 20px;
+    height: 20px;
+    border: 1px solid #d2d2d2;
+    background: white;
+    border-radius: 2px;
+    margin-right: $gap-sm;
+    transition: all 0.2s ease-in-out;
+    &:after {
+      content: "";
+      @include position($top: 1, $left: 5px);
+      width: 8px;
+      height: 12px;
+      opacity: 0;
+      border-bottom: 2px solid $primary;
+      border-right: 2px solid $primary;
+      transform: rotate(45deg);
+    }
+  }
+  input[type="checkbox"] {
+    display: none;
+  }
+  input[type="checkbox"] {
+    &:checked {
+      & ~ .custom-checkbox {
+        &:after {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

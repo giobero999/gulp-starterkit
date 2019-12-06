@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,600");
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: $color-base;
+  background-color: #f1f1f1;
+  font-size: 16px;
+}
+
+.btn-lg {
+  border-radius: 2px;
+}
+
+.page-title {
+  margin-bottom: $gap-lg;
+  border-bottom: $border-base;
+}
+
+.ngx-gallery-image-wrapper,
+.ngx-gallery-thumbnail {
+  border-radius: 2px;
+}
+
+.page {
+  padding: $gap-lg;
+  max-width: 1175px;
+  margin: 0 auto;
+}
+
+.width-auto {
+  width: auto !important;
+}
+
+.loggined-page {
+  padding-left: 280px;
+}
+
+.page-container {
+  padding: $gap-lg;
+}
+
+.ng-select {
+  .ng-select-container {
+    border-radius: $border-radius;
+    font-size: .9rem;
+  }
+  &.is-valid {
+    .ng-select-container {
+      border-color: $success !important;
+    }
+  }
+  &.is-invalid {
+    .ng-select-container {
+      border-color: $hot !important;
+    }
+  }
+}
+.ng-dropdown-panel .scroll-host {
+  font-size: .9rem;  
+}
+
+.filter {
+  margin-bottom: $gap-lg;
+}
+
+.custom-list {
+  &-title {
+    display: grid;
+    grid-template-columns: 60px 1fr 1fr 1fr 1fr;
+    gap: $gap-base;
+    padding-right: $gap-sm;
+    padding-bottom: $gap-sm;
+    font-weight: bold;
+    .custom-list-item-title {
+      font-size: 14px;
+      @include whiteSpace();
+      cursor: pointer;
+      span {
+        display: none;
+      }
+      &.active {
+        color: $primary;
+        span {
+          display: initial;
+        }
+      }
+    }
+  }
+  &-item {
+    display: grid;
+    grid-template-columns: 60px 1fr 1fr 1fr 1fr;
+    align-items: center;
+    padding-right: $gap-sm;
+    background: white;
+    gap: $gap-base;
+    border: 1px solid #eaeaea;
+    border-radius: 2px;
+    margin-bottom: 2px;
+    color: #242e3e;
+    cursor: pointer;
+    &:hover {
+      background: whitesmoke;
+      text-decoration: none;
+      color: inherit;
+    }
+    .custom-list-item-col {
+      padding: $gap-sm 0;
+      @include whiteSpace();
+      .title {
+        @include whiteSpace();
+      }
+      &.preview {
+        position: relative;
+        height: 60px;
+        align-self: stretch;
+        padding: $gap-sm;
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 2px;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
+
+.history {
+  position: relative;
+  padding-left: $gap-lg;
+  &:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    background: #bdbdbd;
+    left: 0;
+    border-radius: 10px;
+  }
+  &-item {
+    position: relative;
+    &:after {
+      content: '';
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      border-radius: 6px;
+      background: #bdbdbd;
+      left: -27px;
+      top: 10px;
+    }
+  }
+  &-user {
+    display: flex;
+    align-items: flex-start;
+    h5 {
+      margin-right: $gap-lg;
+    }
+    small {
+      color: $color-light;
+    }
+  }
+}
+
+

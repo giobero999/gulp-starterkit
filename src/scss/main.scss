@@ -1,0 +1,36 @@
+@import "base/variables";
+
+$theme-colors: (
+  "primary": $primary,
+  "danger": $hot,
+);
+
+/* FONTAWESOME */
+@import "vendors/fontawesome/fontawesome";
+@import "vendors/fontawesome/light";
+@import "vendors/fontawesome/regular";
+@import "vendors/fontawesome/solid";
+@import "vendors/fontawesome/brands";
+
+/* BOOTSTRAP */
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+/* SELECT2 */
+// @import "vendors/select2/core";
+
+
+/* MY STYLES */
+@import "base/mixins";
+@import "base/normalize";
+@import "components/header";
+@import "components/footer";
+@import "components/sidebar";
+@import "components/checkbox";
+
+
+/* LAYOUTS */
+@import "layouts/log";
+
+
+@import "base/responsive";
+

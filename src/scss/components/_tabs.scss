@@ -1,0 +1,21 @@
+.nav.nav-tabs {
+    margin-bottom: $gap-base;
+    .nav-item {
+        .nav-link {
+            color: $color-base;
+            &:hover {
+                border-color: transparent;
+                color: $primary;
+            }
+        }
+        &.active {
+            .nav-link {
+                &.active {
+                    border-color: transparent;
+                    border-bottom: 4px solid $primary;
+                    color: $primary;
+                }
+            }
+        }
+    }
+}

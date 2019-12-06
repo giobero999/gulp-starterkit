@@ -1,0 +1,74 @@
+.sidebar {
+  @include position(fixed, $top: 0, $left: 0);
+  @include flexBox($d: column);
+  width: 280px;
+  background: $color-base;
+  height: 100%;
+  overflow: hidden;
+  padding-top: $gap-base;
+  color: white;
+  .logo {
+    text-align: center;
+    min-height: 98px;
+  }
+  .my-acoount-box {
+    padding: $gap-lg $gap-base $gap-base;
+    background: #2F3A4A;
+    .account {
+      @include flexBox($ai:flex-start);
+      margin-bottom: $gap-base;
+      padding-bottom: $gap-base;
+      border-bottom: 1px solid $color-base;
+      img {
+        width: 48px;
+        min-height: 48px;
+        margin-right: $gap-base;
+        background: white;
+        border-radius: $border-radius;
+        object-fit: cover;
+      }
+    }
+  }
+  .navigation {
+    list-style: none;
+    padding-left: 0;
+    flex: 1;
+    margin-bottom: 0;
+    overflow: auto;
+    .navigation-item-link {
+      position: relative;
+      display: block;
+      padding: 1.2rem 0 $gap-base;
+      color: #b5bdca;
+      padding-left: $gap-base;
+      font-size: 16px;
+      border-left: 4px solid $color-base;
+      transition: background 0.1s ease-in-out, color 0.1s ease-in-out,
+        border-color 0.1s ease-in-out;
+      &:hover,
+      &.active {
+        text-decoration: none;
+        color: #ffffff;
+        background: darken($color-base, 2%);
+        border-color: $primary;
+      }
+      i {
+        width: 50px;
+        padding-right: 20px;
+        text-align: center;
+      }
+      .news-bullet {
+        @include position($top:24px, $right: .8rem);
+        font-size: 8px;
+        color: $cold;
+      }
+    }
+  }
+  .my-deposite {
+    text-align: center;
+    padding: $gap-base;
+    .btn {
+      width: 100%;
+    }
+  }
+}

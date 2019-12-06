@@ -1,0 +1,16 @@
+/*!
+ * Font Awesome Pro 5.4.2 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license (Commercial License)
+ */
+@font-face {
+  font-family: 'Font Awesome 5 Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/fontawesome/fa-light-300.eot");
+  src: url("../fonts/fontawesome/fa-light-300.eot?#iefix") format("embedded-opentype"), url("../fonts/fontawesome/fa-light-300.woff2") format("woff2"), url("../fonts/fontawesome/fa-light-300.woff") format("woff"), url("../fonts/fontawesome/fa-light-300.ttf") format("truetype"), url("../fonts/fontawesome/fa-light-300.svg#fontawesome") format("svg"); }
+
+.fal {
+  font-family: 'Font Awesome 5 Pro';
+  font-weight: 300; }
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImxpZ2h0LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTs7O0dBR0c7QUFDSDtFQUNFLGtDQUFrQztFQUNsQyxtQkFBbUI7RUFDbkIsaUJBQWlCO0VBQ2pCLGtEQUFrRDtFQUNsRCw0VkFBNFYsRUFBRTs7QUFFaFc7RUFDRSxrQ0FBa0M7RUFDbEMsaUJBQWlCLEVBQUUiLCJmaWxlIjoidmVuZG9ycy9mb250YXdlc29tZS9saWdodC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIvKiFcbiAqIEZvbnQgQXdlc29tZSBQcm8gNS40LjIgYnkgQGZvbnRhd2Vzb21lIC0gaHR0cHM6Ly9mb250YXdlc29tZS5jb21cbiAqIExpY2Vuc2UgLSBodHRwczovL2ZvbnRhd2Vzb21lLmNvbS9saWNlbnNlIChDb21tZXJjaWFsIExpY2Vuc2UpXG4gKi9cbkBmb250LWZhY2Uge1xuICBmb250LWZhbWlseTogJ0ZvbnQgQXdlc29tZSA1IFBybyc7XG4gIGZvbnQtc3R5bGU6IG5vcm1hbDtcbiAgZm9udC13ZWlnaHQ6IDMwMDtcbiAgc3JjOiB1cmwoXCIuLi9mb250cy9mb250YXdlc29tZS9mYS1saWdodC0zMDAuZW90XCIpO1xuICBzcmM6IHVybChcIi4uL2ZvbnRzL2ZvbnRhd2Vzb21lL2ZhLWxpZ2h0LTMwMC5lb3Q/I2llZml4XCIpIGZvcm1hdChcImVtYmVkZGVkLW9wZW50eXBlXCIpLCB1cmwoXCIuLi9mb250cy9mb250YXdlc29tZS9mYS1saWdodC0zMDAud29mZjJcIikgZm9ybWF0KFwid29mZjJcIiksIHVybChcIi4uL2ZvbnRzL2ZvbnRhd2Vzb21lL2ZhLWxpZ2h0LTMwMC53b2ZmXCIpIGZvcm1hdChcIndvZmZcIiksIHVybChcIi4uL2ZvbnRzL2ZvbnRhd2Vzb21lL2ZhLWxpZ2h0LTMwMC50dGZcIikgZm9ybWF0KFwidHJ1ZXR5cGVcIiksIHVybChcIi4uL2ZvbnRzL2ZvbnRhd2Vzb21lL2ZhLWxpZ2h0LTMwMC5zdmcjZm9udGF3ZXNvbWVcIikgZm9ybWF0KFwic3ZnXCIpOyB9XG5cbi5mYWwge1xuICBmb250LWZhbWlseTogJ0ZvbnQgQXdlc29tZSA1IFBybyc7XG4gIGZvbnQtd2VpZ2h0OiAzMDA7IH1cbiJdfQ== */
